@@ -1,0 +1,40 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accordian questions</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script> 
+$(document).ready(function(){
+  $("#Toggle").click(function(){
+    $("#panel").slideToggle("slow");
+    });
+  $("#Toggle2").click(function(){
+    $("#panel2").slideToggle("slow");
+    });
+});
+
+</script>
+<style> 
+#panel, #Toggle, #Toggle2, #panel2 {
+  padding: 5px;
+  text-align: center;
+  background-color: mediumaquamarine;
+  border: solid 1px lightblue;
+}
+
+#panel {
+  padding: 50px;
+  display: none;
+}
+</style>
+</head>
+<body>
+ 
+<div id="Toggle">Why am I doing This</div>
+<div id="panel">Because this is epic</div>
+</br>
+<div id="Toggle2">Does this work</div>
+<div id="panel2">Absolutely</div>
+</body>
+</html>
